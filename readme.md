@@ -8,7 +8,9 @@ We propose the MSE-GCN and aims to mitigate the negative effect of incomplete sk
 
 The datasets for model evaluation are Drive&Act, 3MDAD and EBDD. 
 
-Notably, Drive&Act is **a large-scale, fine-grained, multi-modal and cross-view benchmark** is collected from the static driving simulator for video- and body pose-based driver behavior recognition. And the above table reports the results of our proposed MSE-GCN and other state-of-the-art methods for recognizing **12 coarse tasks, 34 fine-grained activities, 6 actions, 17 object categories, 14 locations, and 372 all possible combinations**. Overall, our approach **outperforms the previous body pose-based approaches** for recognizing the fine-grained activities, action, and all possible combinations, while achieves a comparable performance for the coarse tasks, *object*, and *location* classifications.  Details are seen in Section 3.3.
+Notably, Drive&Act is **a large-scale, fine-grained, multi-modal and cross-view benchmark** is collected from the static driving simulator for video- and body pose-based driver behavior recognition. And the above table reports the results of our proposed MSE-GCN and other state-of-the-art methods for recognizing **12 coarse tasks, 34 fine-grained activities, 6 actions, 17 object categories, 14 locations, and 372 all possible combinations**. 
+
+Overall, our approach **outperforms the previous body pose-based approaches** for recognizing the fine-grained activities, action, and all possible combinations, while achieves a comparable performance for the coarse tasks, *object*, and *location* classifications.  Moreover, It is observed that the MSE-GCN outperforms the front-runner 3-Stream in the fine-grained activities by a margin of 4.74% (Val) and 4.44% (Test), respectively. Details are seen in Section 3.3.
 
 The following picture is the pipeline of MSE-GCN. (some details are mosaicked until this work is publish)
 
