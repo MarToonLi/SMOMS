@@ -2,6 +2,8 @@
 
 
 
+Paper see in [An Effective Multi-Scale Framework for Driver Behavior Recognition With Incomplete Skeletons](https://ieeexplore.ieee.org/document/10230878)
+
 ##  1 Paper Details
 
 We propose the framework SMOMS and aims to mitigate the negative effect of incomplete skeletons for improving the performance of Driver Behavior Recognition (DBR) task. Our proposed method consists of three important components: an effective padding strategy and a novel graph convolution layer and an efficient temporal convolution layer.
@@ -16,7 +18,7 @@ The following picture is the pipeline of framework SMOMS. (some details are mosa
 
 <img src="readme.assets/Pipline of MSE-GCN.jpg" alt="Fig. 1 Pipline of MSE-GCN" style="zoom:80%;" />
 
-### 
+
 
 ##  2 Visualization On 3MDAD
 
