@@ -1,0 +1,13 @@
+EfficientGCNv1_d_tc_vs/workdir
+EfficientGCNv1_d_tc_driveact/workdir
+EfficientGCNv1_d_tc_driveact/workdir0527
+EfficientGCNv1_d_tc/workdir
+EfficientGCNv1_d_tc/tunefiles/files0415_softnode3_main
+EfficientGCNv1_d_tc_driveact/tunefiles
+EfficientGCNv1_d_tc/resources
+EfficientGCNv1_d_tc_vs/resources
+EfficientGCNv1_d_tc_driveact/resources
+EfficientGCNv1_d_tc_driveact/resource0527
+**/__pycache__
+EfficientGCNv1_d_tc/checkpoint
+EfficientGCNv1_d_tc_driveact/checkpoint

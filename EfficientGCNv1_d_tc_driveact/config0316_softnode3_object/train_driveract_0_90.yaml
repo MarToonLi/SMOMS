@@ -1,0 +1,71 @@
+# Setting
+gpus: 0
+seed: 5354
+debug: False
+pretrained_path: 
+work_dir: ./workdir
+no_progress_bar: False
+
+# Visualization
+visualization_class: 0
+visualization_sample: 0
+visualization_frames: []
+
+# Data Loader
+dataset: driveract_object
+dataset_args:
+  driveract_object:
+    train_batch_size: 16
+    eval_batch_size: 16
+    num_frame: 90
+    inputs: JVB
+    transform: False
+#    root_folder: /public/home/chen_ai/lixutong/projects/coldnight/n3_storage/data_advanced_splitrgb1/3mdad/clip50/RGB2/
+#    root_folder: /home/bullet/PycharmProjects/LowlightRecognition/coldnight/n3_storage/data_advanced_splitrgb1/3mdad/clip50/RGB2/
+#    root_folder: /home/bullet/PycharmProjects/LowlightRecognition/coldnight/n3_storage/data_advanced_splitrgb1_0315/3mdad/clip50/RGB2/
+#    root_folder: /home/bullet/PycharmProjects/LowlightRecognition/coldnight/n3_storage/data_advanced_splitrgb1_0316_softnode2_fixed/3mdad/clip50/RGB2/
+    root_folder: /home/meng/PycharmProjects/LowlightRecognition/coldnight/n3_storage/data_advanced_splitrgb1_0316_softnode3/driveract/0/
+
+
+# Model
+model_type: EfficientGCN-B0
+model_args:
+  stem_channel: 64
+  block_args: [[48,1,0.5],[24,1,0.5],[64,2,1],[128,2,1]]
+  fusion_stage: 2
+  act_type: swish
+  att_type: stja
+  layer_type: Sep
+  drop_prob: 0.25
+  kernel_size: [5,2]
+  scale_args: [1.2,1.35]
+  expand_ratio: 2
+  reduct_ratio: 4
+  bias: True
+  edge: True
+
+# Optimizer
+# SGD, Adam
+optimizer: SGD
+optimizer_args:
+  SGD:
+    lr: 0.1
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0002
+  Adam:
+    lr: 0.1
+    betas: [0.9,0.99]
+    weight_decay: 0.0002
+
+# Scheduler
+# step, cosine
+lr_scheduler: cosine
+scheduler_args:
+  step:
+    max_epoch: 50
+    warm_up: 0
+    step_lr: [20,50]
+  cosine:
+    max_epoch: 50
+    warm_up: 0
